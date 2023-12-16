@@ -36,7 +36,7 @@
         var jsonBooking = JSON.stringify(bookingDetails);
 
         // Use GitHub API to create a new file in your repository
-        fetch('https://api.github.com/repos/your-username/your-repo/contents/bookings/booking-' + Date.now() + '.json', {
+        fetch('https://botleigh-grange.github.io/store/' + Date.now() + '.json', {
             method: 'PUT',
             headers: {
                 'Authorization': 'Bearer YOUR_GITHUB_TOKEN',
