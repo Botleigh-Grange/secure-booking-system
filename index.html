@@ -4,23 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking Form</title>
+    <script>
+        function submitForm() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var checkIn = document.getElementById('checkIn').value;
+            var checkOut = document.getElementById('checkOut').value;
+
+            // Assuming you have a public GitHub repository to store form data
+            var repoUrl = 'https://api.github.com/repos/yourusername/your-repo/issues';
+            
+            var formData = {
+                title: 'Booking Request',
+                body: 'Name: ' + name + '\nEmail: ' + email + '\nCheck-in: ' + checkIn + '\nCheck-out: ' + checkOut
+            };
+
+            fetch(repoUrl, {
+                method: 'POST',
+                body: JSON.stringify(formData),
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer YOUR_GITHUB_TOKEN' // Replace with your GitHub Personal Access Token
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert('Booking submitted successfully!');
+                console.log(data);
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
 </head>
 <body>
-
-<h1>Booking Form</h1>
-
-<form action="process_booking.php" method="post">
-    <label for="name">Name:</label>
-    <input type="text" name="name" required><br>
-
-    <label for="email">Email:</label>
-    <input type="email" name="email" required><br>
-
-    <label for="date">Booking Date:</label>
-    <input type="date" name="date" required><br>
-
-    <input type="submit" value="Submit">
-</form>
-
+    <h1>Booking Form</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <br>
+        <label for="checkIn">Check-in Date:</label>
+        <input type="date" id="checkIn" required>
+        <br>
+        <label for="checkOut">Check-out Date:</label>
+        <input type="date" id="checkOut" required>
+        <br>
+        <button type="button" onclick="submitForm()">Submit Booking</button>
+    </form>
 </body>
 </html>
