@@ -15,27 +15,38 @@
 
         #container {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             margin-top: 10vh;
-            margin-right: 10vw;
+            margin-left: 10vw;
             color: #333; /* Black/gray color */
         }
 
         #content {
-            width: 60%;
+            width: 100%;
+        }
+
+        #title {
+            text-align: left;
+            font-size: 48px;
+            font-family: Verdana, sans-serif;
+            font-style: italic;
+            color: #333; /* Black/gray color */
+            text-shadow: 2px 2px 2px #000; /* Shadow */
+            margin-bottom: 10px; /* Adjust as needed */
+        }
+
+        #info {
+            text-align: left;
+            font-size: 24px;
+            margin-top: -10px; /* Adjust as needed */
+            margin-bottom: 20px; /* Adjust as needed */
         }
 
         #menu-container {
-            width: 30%;
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.7); /* White background with opacity */
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-
-        #menu {
-            text-align: left;
-            margin-top: 10px;
         }
 
         #navigation {
@@ -53,29 +64,10 @@
             text-decoration: none;
         }
 
-        #title {
-            text-align: left;
-            font-size: 48px;
-            font-family: Verdana, sans-serif;
-            font-style: italic;
-            color: #333; /* Black/gray color */
-            text-shadow: 2px 2px 2px #000; /* Shadow */
-            margin-left: 10vw; /* Adjust as needed */
-        }
-
-        #info {
-            text-align: center;
-            font-size: 24px;
-            color: #333; /* Black/gray color */
-            margin-top: 5vh; /* Adjust as needed */
-        }
-
         #contact {
-            position: fixed;
-            bottom: 10px;
-            left: 10px;
             color: #fff; /* White color */
             font-size: 16px; /* Adjust as needed */
+            margin-top: 10px; /* Adjust as needed */
         }
     </style>
 </head>
@@ -98,19 +90,13 @@
     </div>
 
     <div id="menu-container">
-        <div id="menu">
-            <p>Menu:</p>
-            <p>Scones £5.99</p>
-            <p>Tea £7.20</p>
-        </div>
+        <p>Menu:</p>
+        <p>Scones £5.99</p>
+        <p>Tea £7.20</p>
     </div>
 </div>
 
 <div id="contact">
     <p>To book:</p>
     <p>Contact: 07478667045</p>
-    <p>Email: <a href="mailto:haytim2014london@gmail.com">haytim2014london@gmail.com</a></p>
-</div>
-
-</body>
-</html>
+    <p>Email: <a href="mailto:haytim2014london@gmail.com">haytim2014lond
