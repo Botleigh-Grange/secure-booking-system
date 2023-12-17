@@ -3,34 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afternoon Tea</title>
+    <title>Afternoon Tea at Botleigh Grange Hotel</title>
     <style>
         body {
-            background-image: url('https://images.app.goo.gl/pN3h4jdn3wBxUSRD6');
+            font-family: Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://www.shutterstock.com/image-vector/continuous-one-single-line-drawing-600nw-2194964553.jpg') no-repeat center center fixed;
             background-size: cover;
-            background-position: center;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
         }
-        #menu {
-            display: inline-block;
+
+        #navigation {
+            background-color: rgba(255, 255, 255, 0.7); /* White background with opacity */
+            padding: 10px;
+            position: fixed;
+            top: 10px;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        #navigation a {
+            color: #333; /* Black/gray color */
+            text-decoration: none;
+        }
+
+        #title {
             text-align: left;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            border-radius: 10px;
+            font-size: 48px;
+            font-family: Verdana, sans-serif;
+            font-style: italic;
+            color: #333; /* Black/gray color */
+            text-shadow: 2px 2px 2px #000; /* Shadow */
+            margin-top: 10vh; /* Adjust as needed */
+            margin-left: 10vw; /* Adjust as needed */
+        }
+
+        #info {
+            text-align: center;
+            font-size: 24px;
+            color: #333; /* Black/gray color */
+            margin-top: 5vh; /* Adjust as needed */
+        }
+
+        #menu {
+            text-align: center;
+            font-size: 20px;
+            color: #333; /* Black/gray color */
+            margin-top: 2vh; /* Adjust as needed */
+        }
+
+        #contact {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            color: #fff; /* White color */
+            font-size: 16px; /* Adjust as needed */
         }
     </style>
 </head>
 <body>
-    <div id="menu">
-        <h1>Afternoon Tea</h1>
-        <p>Price: £23.99</p>
-        <p>Menu:</p>
-        <ul>
-            <li>Scones: £5.99</li>
-            <li>Tea pot: £6.00</li>
-        </ul>
-        <p>To book, call: 02380989555</p>
- 
+
+<div id="navigation">
+    <a href="#">Home</a>
+    <a href="#">Restaurant</a>
+    <a href="#">Events</a>
+    <a href="#">Room Booking</a>
+</div>
+
+<div id="title">Afternoon Tea</div>
+
+<div id="info">
+    <p>Price: £23.99</p>
+    <p>From Monday to Saturday</p>
+</div>
+
+<div id="menu">
+    <p>Menu:</p>
+    <p>Scones £5.99</p>
+    <p>Tea £7.20</p>
+</div>
+
+<div id="contact">
+    <p>To book:</p>
+    <p>Contact: 07478667045</p>
+    <p>Email: <a href="mailto:haytim2014london@gmail.com">haytim2014london@gmail.com</a></p>
+</div>
+
+</body>
+</html>
