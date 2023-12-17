@@ -9,106 +9,89 @@
             font-family: Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background: url('https://www.visitisleofwight.co.uk/dbimgs/Afternoon%20Tea%20Isle%20of%20Wight%20(1).jpg') no-repeat center center fixed;
+            background: url('https://www.shutterstock.com/image-vector/continuous-one-single-line-drawing-600nw-2194964553.jpg') no-repeat center center fixed;
             background-size: cover;
+            color: #8B4513; /* Brown/Gold color */
         }
 
-        #container {
-            display: flex;
-            flex-direction: column;
-            margin-top: 10vh;
-            margin-left: 10vw;
-            color: #333; /* Black/gray color */
-        }
-
-        #content {
+        #top-navigation {
+            background-color: rgba(255, 255, 255, 0.7); /* White background with opacity */
+            padding: 10px;
+            position: fixed;
+            top: 0;
             width: 100%;
             display: flex;
-            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        #top-navigation a {
+            color: #8B4513; /* Brown/Gold color */
+            text-decoration: none;
+        }
+
+        #title-container {
+            margin: 10vh 5vw;
+            text-align: left;
         }
 
         #title {
-            text-align: left;
-            font-size: 48px;
+            font-size: 60px;
             font-family: Verdana, sans-serif;
             font-style: italic;
-            color: #333; /* Black/gray color */
+            color: #8B4513; /* Brown/Gold color */
             text-shadow: 2px 2px 2px #000; /* Shadow */
-            margin-bottom: 10px; /* Adjust as needed */
+            margin-bottom: 10px;
         }
 
-        #info {
-            text-align: left;
-            font-size: 24px;
-            margin-top: -10px; /* Adjust as needed */
-            margin-bottom: 20px; /* Adjust as needed */
-        }
-
-        #menu-container {
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.7); /* White background with opacity */
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            margin-top: 10px;
-            align-self: flex-start;
+        #price-info {
+            font-size: 40px;
+            color: #0000FF; /* Blue color */
+            margin-top: -10px;
+            margin-bottom: 20px;
         }
 
         #menu {
             text-align: left;
+            font-size: 30px;
+            text-decoration: underline;
+            margin-bottom: 10px;
         }
 
-        #navigation {
-            background-color: rgba(255, 255, 255, 0.7); /* White background with opacity */
-            padding: 10px;
-            position: fixed;
-            top: 10px;
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-        }
-
-        #navigation a {
-            color: #333; /* Black/gray color */
-            text-decoration: none;
+        #menu-items {
+            font-size: 30px;
+            margin-bottom: 20px;
         }
 
         #contact {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
             color: #fff; /* White color */
             font-size: 16px; /* Adjust as needed */
-            margin-top: 10px; /* Adjust as needed */
         }
     </style>
 </head>
 <body>
 
-<div id="navigation">
+<div id="top-navigation">
     <a href="#">Home</a>
     <a href="#">Restaurant</a>
     <a href="#">Events</a>
     <a href="#">Room Booking</a>
 </div>
 
-<div id="container">
-    <div id="content">
-        <div id="title">Afternoon Tea</div>
-        <div id="info">
-            <p>Price: £23.99</p>
-            <p>From Monday to Saturday</p>
-        </div>
-    </div>
-
-    <div id="menu-container">
-        <p>Menu:</p>
-        <p>Scones £5.99</p>
-        <p>Tea £7.20</p>
-    </div>
+<div id="title-container">
+    <div id="title">Afternoon Tea</div>
 </div>
 
-<div id="contact">
-    <p>To book:</p>
-    <p>Contact: 07478667045</p>
-    <p>Email: <a href="mailto:haytim2014london@gmail.com">haytim2014london@gmail.com</a></p>
+<div id="price-info">
+    <p>Price: £23.99</p>
+    <p>From Monday to Saturday</p>
 </div>
 
-</body>
-</html>
+<div id="menu">
+    Menu:
+</div>
+
+<div id="menu-items">
+    <p>Scones £5.99</
